@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feel It Again — The Sound of Kings</title>
+<title>The Sound of Kings — Move through life like a King again</title>
 <style>
   :root{
     --navy:#0C1230;
@@ -19,270 +19,228 @@
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{
-    font-family:var(--sans);color:var(--bone);line-height:1.6;
-    background:var(--navy);overflow-x:hidden;
-  }
+  body{font-family:var(--sans);color:var(--bone);line-height:1.6;background:var(--navy);overflow-x:hidden}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 6vw}
-  section{position:relative}
-  h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.06}
-  .serif{font-family:var(--serif)}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.08}
   em{font-style:italic;color:var(--gold-bright)}
   .gold{color:var(--gold-bright)}
-  .kicker{font-size:.74rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);
-    display:inline-flex;align-items:center;gap:.9rem;margin-bottom:1.6rem}
+  .kicker{font-size:.74rem;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);
+    display:inline-flex;align-items:center;gap:.9rem;margin-bottom:1.7rem}
   .kicker::before{content:"";width:2rem;height:1px;background:var(--gold);opacity:.7}
   .btn{display:inline-block;background:var(--gold);color:var(--navy);border:none;cursor:pointer;
     padding:1rem 2.2rem;font-family:var(--sans);font-weight:700;letter-spacing:.14em;text-transform:uppercase;
     font-size:.86rem;border-radius:2px;transition:.2s;text-decoration:none}
   .btn:hover{background:var(--gold-bright);transform:translateY(-1px)}
 
-  /* ---------- NAV ---------- */
+  /* NAV */
   nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(8px);
     background:rgba(12,18,48,.72);border-bottom:1px solid rgba(201,162,75,.14)}
   nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:1.1rem;padding-bottom:1.1rem}
   .brand{font-family:var(--serif);font-size:1.15rem;letter-spacing:.04em;display:flex;align-items:center;gap:.6rem}
-  .brand .crown{color:var(--gold);font-size:1.05rem}
+  .brand .crown{color:var(--gold)}
   nav .btn{padding:.6rem 1.4rem;font-size:.72rem}
 
-  /* ---------- HERO ---------- */
-  .hero{padding:8rem 0 7rem;text-align:center;
+  /* HERO */
+  .hero{padding:8rem 0 6.5rem;text-align:center;
     background:
-      radial-gradient(90% 60% at 50% -5%, #16205a 0%, rgba(22,32,90,0) 60%),
-      radial-gradient(70% 50% at 50% 115%, #0a1440 0%, rgba(10,20,64,0) 60%),
+      radial-gradient(90% 60% at 50% -5%, #17225e 0%, rgba(23,34,94,0) 60%),
+      radial-gradient(70% 50% at 50% 118%, #0a1440 0%, rgba(10,20,64,0) 60%),
       var(--navy);}
-  .hero .crown-lg{font-size:1.8rem;color:var(--gold);letter-spacing:.3em;margin-bottom:1.6rem}
-  .hero h1{font-size:clamp(2.6rem,6vw,5rem);max-width:16ch;margin:0 auto}
+  .hero .crown-lg{font-size:1.9rem;color:var(--gold);letter-spacing:.3em;margin-bottom:1.4rem}
+  .hero .name{font-family:var(--serif);letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-size:.85rem;margin-bottom:2rem}
+  .hero h1{font-size:clamp(2.6rem,6.4vw,5.4rem);max-width:15ch;margin:0 auto}
   .hero .sub{font-family:var(--serif);font-style:italic;color:var(--bone-dim);
-    font-size:clamp(1.15rem,2.2vw,1.6rem);max-width:44ch;margin:1.8rem auto 0;line-height:1.45}
-  .hero .rule{width:6rem;height:2px;background:var(--gold);margin:2.4rem auto}
+    font-size:clamp(1.15rem,2.2vw,1.65rem);max-width:46ch;margin:2rem auto 0;line-height:1.45}
+  .hero .rule{width:6rem;height:2px;background:var(--gold);margin:2.6rem auto}
 
-  /* opt-in form */
-  .optin{max-width:520px;margin:2.4rem auto 0}
-  .optin .lbl{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bone-faint);margin-bottom:1rem}
-  .optin form{display:flex;gap:.6rem;flex-wrap:wrap}
-  .optin input{flex:1 1 220px;background:rgba(243,237,224,.06);border:1px solid rgba(243,237,224,.2);
+  /* opt-in */
+  .optin{max-width:540px;margin:2.4rem auto 0}
+  .optin .lbl{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+  .optin form{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}
+  .optin input{flex:1 1 240px;background:rgba(243,237,224,.06);border:1px solid rgba(243,237,224,.2);
     color:var(--bone);padding:1rem 1.1rem;font-size:1rem;border-radius:2px;font-family:var(--sans)}
   .optin input::placeholder{color:var(--bone-faint)}
   .optin input:focus{outline:none;border-color:var(--gold)}
-  .optin .btn{flex:0 0 auto}
-  .optin .fine{margin-top:1rem;font-size:.78rem;color:var(--bone-faint);letter-spacing:.02em}
+  .optin .fine{margin-top:1rem;font-size:.8rem;color:var(--bone-faint)}
   .optin .fine b{color:var(--bone-dim);font-weight:400}
+  .thanks{display:none;color:var(--gold-bright);font-family:var(--serif);font-style:italic;margin-top:1rem;font-size:1.1rem}
 
-  /* ---------- generic band ---------- */
+  /* bands */
   .band{padding:6.5rem 0}
-  .band.alt{background:linear-gradient(180deg, #0a0f2a 0%, #0d1436 100%);
-    border-top:1px solid rgba(201,162,75,.1);border-bottom:1px solid rgba(201,162,75,.1)}
+  .band.alt{background:linear-gradient(180deg,#0a0f2a 0%,#0d1436 100%);border-top:1px solid rgba(201,162,75,.1);border-bottom:1px solid rgba(201,162,75,.1)}
+  .center-head{text-align:center;max-width:680px;margin:0 auto 3.6rem}
+  .center-head h2{font-size:clamp(2rem,4vw,3.1rem)}
+  .center-head p{color:var(--bone-dim);margin-top:1rem;font-size:1.1rem}
 
-  /* problem */
-  .problem{max-width:760px;margin:0 auto;text-align:center}
-  .problem h2{font-size:clamp(1.9rem,3.6vw,2.9rem);max-width:20ch;margin:0 auto}
-  .problem .drop{color:var(--gold-bright);display:block;margin-top:.4rem}
-  .problem p{color:var(--bone-dim);font-size:1.12rem;margin-top:1.8rem;line-height:1.6}
-  .problem .bleed{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.4rem}
-  .problem .bleed span{border:1px solid rgba(201,162,75,.3);color:var(--gold-bright);
-    padding:.5rem 1.1rem;border-radius:2px;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase}
+  /* the promise */
+  .promise{max-width:820px;margin:0 auto;text-align:center}
+  .promise .big{font-family:var(--serif);font-size:clamp(2rem,4.4vw,3.4rem);line-height:1.2}
+  .promise .big em{color:var(--gold-bright)}
+  .promise .days{display:inline-block;font-family:var(--serif);color:var(--gold-bright);font-size:1.15rem;font-style:italic;margin-top:2rem}
 
-  /* belief */
-  .belief{max-width:840px;margin:0 auto;text-align:center}
-  .belief .big{font-family:var(--serif);font-size:clamp(2rem,4.4vw,3.4rem);line-height:1.18}
-  .belief .big em{color:var(--gold-bright)}
-  .belief p{color:var(--bone-dim);font-size:1.12rem;margin-top:1.8rem;max-width:52ch;margin-left:auto;margin-right:auto}
+  /* three centers */
+  .centers{display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem;margin-top:1rem}
+  .center{border-top:1px solid rgba(201,162,75,.35);padding-top:1.6rem}
+  .center .lab{font-family:var(--serif);letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-size:.9rem;margin-bottom:.5rem}
+  .center .t{font-family:var(--serif);font-size:1.5rem;color:var(--bone);margin-bottom:.9rem;line-height:1.25}
+  .center p{color:var(--bone-dim);font-size:1.02rem;line-height:1.6}
+  @media(max-width:760px){.centers{grid-template-columns:1fr;gap:2.6rem}}
 
-  /* protocol days */
-  .center-head{text-align:center;max-width:640px;margin:0 auto 3.5rem}
-  .center-head h2{font-size:clamp(1.9rem,3.8vw,3rem)}
-  .center-head p{color:var(--bone-dim);margin-top:1rem;font-size:1.08rem}
-  .days{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem}
-  .daycard{border:1px solid rgba(243,237,224,.1);border-radius:4px;padding:1.8rem 1.6rem;
-    background:rgba(255,255,255,.015);transition:.2s}
-  .daycard:hover{border-color:rgba(201,162,75,.4);transform:translateY(-2px)}
-  .daycard .d{font-family:var(--serif);color:var(--gold);font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.8rem}
-  .daycard h3{font-size:1.4rem;margin-bottom:.7rem}
-  .daycard p{color:var(--bone-dim);font-size:.96rem;line-height:1.5}
+  /* kevin / why it works */
+  .why{max-width:820px;margin:0 auto;text-align:center}
+  .why h2{font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:24ch;margin:0 auto 1.6rem}
+  .why p{color:var(--bone-dim);font-size:1.1rem;line-height:1.65;max-width:56ch;margin:0 auto 1.2rem}
+  .why .price{border-top:1px solid rgba(201,162,75,.3);margin-top:2.4rem;padding-top:1.8rem;font-family:var(--serif);
+    font-size:clamp(1.2rem,2.2vw,1.6rem);color:var(--bone);line-height:1.4}
+  .why .price b{color:var(--gold-bright);font-weight:400}
 
-  /* who is kevin */
-  .kevin{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center;max-width:820px;margin:0 auto}
-  .kevin .badge{width:150px;height:150px;border-radius:50%;border:1px solid var(--gold);
-    display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:3rem;color:var(--gold);
-    background:radial-gradient(circle at 50% 35%, #16205a, #0a0f2a)}
-  .kevin h2{font-size:clamp(1.7rem,3.2vw,2.4rem);margin-bottom:.7rem}
-  .kevin .three{font-family:var(--serif);font-style:italic;color:var(--gold-bright);font-size:1.2rem;margin-bottom:1.1rem}
-  .kevin p{color:var(--bone-dim);font-size:1.05rem;line-height:1.6;margin-bottom:.9rem}
-  .kevin .cred{margin-top:.6rem;font-style:italic;color:var(--gold-bright);font-family:var(--serif)}
+  /* what shifts */
+  .shifts{display:grid;grid-template-columns:1fr 1fr;gap:2rem 4rem;margin-top:1rem}
+  .shift{border-left:2px solid var(--gold);padding-left:1.6rem}
+  .shift .h{font-family:var(--serif);font-size:1.5rem;color:var(--bone);margin-bottom:.5rem}
+  .shift p{color:var(--bone-dim);font-size:1rem;line-height:1.55}
+  @media(max-width:640px){.shifts{grid-template-columns:1fr}}
 
-  /* hint of the room */
-  .room{max-width:720px;margin:0 auto;text-align:center}
-  .room .q{font-family:var(--serif);font-size:clamp(1.6rem,3.2vw,2.4rem);line-height:1.3}
-  .room p{color:var(--bone-dim);margin-top:1.4rem;font-size:1.05rem}
-  .room p b{color:var(--gold-bright);font-weight:400;font-family:var(--serif)}
-
-  /* two backend offers */
-  .offers{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:.5rem}
-  .offer{border:1px solid rgba(201,162,75,.28);border-radius:4px;padding:2.2rem 2rem;background:rgba(255,255,255,.015);transition:.2s}
-  .offer:hover{border-color:rgba(201,162,75,.55);transform:translateY(-2px)}
-  .offer .oh{font-family:var(--serif);font-size:1.7rem;color:var(--bone);margin-bottom:.35rem}
-  .offer .ot{color:var(--gold-bright);font-family:var(--serif);font-style:italic;font-size:1.08rem;margin-bottom:1.1rem}
-  .offer p{color:var(--bone-dim);font-size:1.01rem;line-height:1.6}
-  @media(max-width:640px){.offers{grid-template-columns:1fr}}
-
-  /* personal note — friend talking */
-  .note{max-width:680px;margin:0 auto;text-align:center}
-  .note .nb{font-family:var(--serif);font-size:clamp(1.2rem,2.2vw,1.6rem);line-height:1.5;color:var(--bone);margin-bottom:1.3rem}
-  .note .nb em{color:var(--gold-bright);font-style:italic}
-  .note .sign{font-family:var(--serif);font-style:italic;color:var(--gold-bright);font-size:1.25rem;margin-top:1.6rem}
+  /* the vision / movement */
+  .vision{max-width:820px;margin:0 auto;text-align:center}
+  .vision h2{font-size:clamp(2rem,4vw,3.1rem);margin-bottom:1.4rem}
+  .vision p{color:var(--bone-dim);font-size:1.12rem;line-height:1.65;max-width:56ch;margin:0 auto}
+  .stages{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.6rem 1rem;margin-top:3.2rem}
+  .stage{font-family:var(--serif);color:var(--bone);font-size:1.05rem}
+  .stage.now{color:var(--gold-bright)}
+  .stages .sep{color:var(--gold);font-size:1rem}
 
   /* final CTA */
   .final{padding:7rem 0;text-align:center;
-    background:radial-gradient(80% 60% at 50% 50%, #14204f 0%, rgba(20,32,79,0) 65%), var(--navy)}
-  .final .crown{font-size:1.6rem;color:var(--gold);letter-spacing:.3em;margin-bottom:1.4rem}
+    background:radial-gradient(80% 60% at 50% 50%,#16225a 0%,rgba(22,34,90,0) 65%),var(--navy)}
+  .final .crown{font-size:1.7rem;color:var(--gold);letter-spacing:.3em;margin-bottom:1.4rem}
   .final h2{font-size:clamp(2.2rem,4.6vw,3.6rem);max-width:18ch;margin:0 auto}
-  .final .sub{font-family:var(--serif);font-style:italic;color:var(--bone-dim);font-size:clamp(1.1rem,2vw,1.5rem);margin-top:1.4rem}
+  .final .sub{font-family:var(--serif);font-style:italic;color:var(--bone-dim);font-size:clamp(1.1rem,2vw,1.5rem);margin-top:1.4rem;max-width:40ch;margin-left:auto;margin-right:auto}
+  .final .signoff{font-family:var(--serif);font-style:italic;color:var(--gold-bright);margin-top:1.2rem}
 
-  /* footer */
   footer{border-top:1px solid rgba(201,162,75,.14);padding:2.6rem 0;color:var(--bone-faint);font-size:.82rem}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
   footer .links a{color:var(--bone-faint);text-decoration:none;margin-left:1.4rem}
   footer .links a:hover{color:var(--gold)}
-
-  @media(max-width:640px){
-    .kevin{grid-template-columns:1fr;text-align:center;gap:1.6rem}
-    .kevin .badge{margin:0 auto}
-    .optin form{flex-direction:column}
-    .optin .btn{width:100%}
-  }
+  @media(max-width:640px){.optin form{flex-direction:column}.optin .btn{width:100%}}
 </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav><div class="wrap">
     <div class="brand"><span class="crown">♛</span> The Sound of Kings</div>
-    <a href="#get" class="btn">Get the free protocol</a>
+    <a href="#begin" class="btn">Begin free</a>
   </div></nav>
 
   <!-- HERO -->
   <header class="hero"><div class="wrap">
     <div class="crown-lg">♛</div>
-    <h1>You built the life.<br>Now <em>feel</em> it.</h1>
-    <p class="sub">Come with me for five days. You are the instrument — it starts with your voice. Twenty minutes a day, with or without a guitar in your hands. For the men who built the life and stopped feeling it.</p>
+    <div class="name">The Sound of Kings</div>
+    <h1>Move through life like a King again.</h1>
+    <p class="sub">In thirty days, a transformative shift in how you move through life. Not a course — a shift, on the level of soul, heart, and mind. Music is the doorway back.</p>
     <div class="rule"></div>
-    <div class="optin" id="get">
-      <div class="lbl">Free · The 5-Day Voice Protocol</div>
-      <form onsubmit="event.preventDefault();document.getElementById('thanks').style.display='block';this.style.display='none';">
+    <div class="optin" id="begin">
+      <div class="lbl">Start free · The First Shift</div>
+      <form onsubmit="event.preventDefault();this.nextElementSibling.style.display='block';this.style.display='none';">
         <input type="email" name="email" placeholder="Your best email" required>
-        <button type="submit" class="btn">Send me the protocol →</button>
+        <button type="submit" class="btn">Send me the First Shift →</button>
       </form>
-      <div id="thanks" style="display:none;color:var(--gold-bright);font-family:var(--serif);font-style:italic;margin-top:1rem;font-size:1.1rem">
-        Check your inbox — your first rep is waiting. ♛
-      </div>
-      <div class="fine"><b>No spam.</b> The protocol, and the occasional note on feeling as a practice. Unsubscribe anytime.</div>
+      <div class="thanks">It's on its way. Your first shift is waiting. ♛</div>
+      <div class="fine"><b>The first practice, free.</b> The thirty-day transformation when you're ready.</div>
     </div>
   </div></header>
 
-  <!-- PROBLEM -->
-  <section class="band"><div class="wrap problem">
-    <div class="kicker" style="display:inline-flex">The quiet part</div>
-    <h2>You are the instrument. And right now,<span class="drop">you feel nothing.</span></h2>
-    <p>Maybe there's a guitar in your office you can't feel. Maybe you just haven't sung out loud since you were seventeen. Either way — your mind never shuts off, so your heart can't come through. And it's not just in the music. It's at the dinner table. It's in your marriage.</p>
-    <div class="bleed"><span>The marriage</span><span>The partnerships</span><span>The parenting</span></div>
+  <!-- THE PROMISE -->
+  <section class="band"><div class="wrap promise">
+    <div class="kicker" style="display:inline-flex">The promise</div>
+    <div class="big">Inside of thirty days, you'll feel a transformative shift in <em>how you move through life</em>.</div>
+    <div class="days">Not better information. A different man walking through the same life.</div>
   </div></section>
 
-  <!-- BELIEF-BREAK -->
-  <section class="band alt"><div class="wrap belief">
-    <div class="kicker">The reframe</div>
-    <div class="big">Feeling isn't a talent.<br>It's a <em>practice</em> — and you're already the best in the room at practice.</div>
-    <p>You didn't build your life by waiting for motivation. You repped it. Feeling works the same way. Music is the rep. The song is the excavation. <em>The block in the voice is the block in the life.</em></p>
-  </div></section>
-
-  <!-- WHAT'S INSIDE -->
-  <section class="band"><div class="wrap">
+  <!-- THREE CENTERS -->
+  <section class="band alt"><div class="wrap">
     <div class="center-head">
-      <div class="kicker" style="display:inline-flex">What's inside</div>
-      <h2>Five days. Twenty minutes each. One real moment of feeling by Day 5.</h2>
-      <p>Voice first. An instrument only if you want one. No theory, no woo — just reps, the same way you built everything else.</p>
+      <div class="kicker" style="display:inline-flex">How the shift happens</div>
+      <h2>One shift. Three centers.</h2>
+      <p>We don't work on the surface. We move the three places a man actually lives from.</p>
     </div>
-    <div class="days">
-      <div class="daycard"><div class="d">Day 1</div><h3>The Voice, Not the Guitar</h3><p>Find the exact moment you hold back — the line you drop to a mumble. That's the armor. We start there.</p></div>
-      <div class="daycard"><div class="d">Day 2</div><h3>Hum Before You Think</h3><p>The off switch you've been looking for. The mind can't run its meetings while the body is resonating.</p></div>
-      <div class="daycard"><div class="d">Day 3</div><h3>The Cover That Covers You</h3><p>Another man wrote the words. That's the trick — the truth sneaks in through his song.</p></div>
-      <div class="daycard"><div class="d">Day 4</div><h3>Play Like a Kid, Not a CEO</h3><p>Twenty minutes where there are no wrong notes. Joy is a muscle. This is its first rep in years.</p></div>
-      <div class="daycard"><div class="d">Day 5</div><h3>The Dedication</h3><p>One song, one witness, one dedication. Feeling returns fastest when it's witnessed.</p></div>
-    </div>
-  </div></section>
-
-  <!-- WHO IS KEVIN -->
-  <section class="band alt"><div class="wrap kevin">
-    <div class="badge">♛</div>
-    <div>
-      <div class="kicker">Who's guiding this</div>
-      <h2>Kevin Six7</h2>
-      <div class="three">Part growth trainer. Part voice coach. Part musician. One man.</div>
-      <p>A lifelong entrepreneur — so he understands the weight you carry in business. A husband and father, now divorced — so he knows first-hand the full spectrum of emotional gut-punches life throws at a man. Decades deep in his own growth work, with finely tuned intuitive senses that cut to the real thing fast, often in the first session.</p>
-      <p>He builds trust in minutes, opens the door to immediate emotional release, and plays music live that pulls the feeling up out of you. A natural communicator — at home one-on-one, in a room of men, or on a stage. Not theory. Presence.</p>
-      <div class="cred">You are the instrument. He'll help you play it again.</div>
-    </div>
-  </div></section>
-
-  <!-- THE WORK BEHIND IT -->
-  <section class="band"><div class="wrap">
-    <div class="center-head">
-      <div class="kicker" style="display:inline-flex">When the five days aren't enough</div>
-      <h2>Five days is a crack in the ice. This is the thaw.</h2>
-      <p>Two rooms for the Kings who want the whole thing — not a peak weekend, but training.</p>
-    </div>
-    <div class="offers">
-      <div class="offer">
-        <div class="oh">The Sound of Kings</div>
-        <div class="ot">Voice training — plus instruments.</div>
-        <p>Your voice, trained and freed. Already play? This strengthens it. Don't play a note? Also fine — we'll teach you. We gather the Kings who need only refinement on the parts of life that still need training.</p>
+    <div class="centers">
+      <div class="center">
+        <div class="lab">Soul</div>
+        <div class="t">Movement on the soul level.</div>
+        <p>You stop moving through life braced and defended, and start moving from your center. People feel it before you say a word — the way you walk into a room, the way you hold a silence.</p>
       </div>
-      <div class="offer">
-        <div class="oh">The 45-Day Reboot</div>
-        <div class="ot">A 45-day training. The Feminine Pole, downloaded.</div>
-        <p>Forty-five days of training to reclaim the pole most driven men cut off at the root — the feminine: feeling, presence, receptivity. Not to make you soft. To make you whole. A King is grounded in both poles, and the best leaders lead from both.</p>
+      <div class="center">
+        <div class="lab">Heart</div>
+        <div class="t">Music from the heart space.</div>
+        <p>The heart doesn't open to logic — it opens to sound. Music is the fastest door back to feeling. Play an instrument or don't; either way, we take you through it with your own voice.</p>
+      </div>
+      <div class="center">
+        <div class="lab">Mind</div>
+        <div class="t">The loops, set free.</div>
+        <p>We find the mental traps that keep looping your energy — the same thought, the same drain, on repeat — and we free what's been stuck for years. The energy comes back to you.</p>
       </div>
     </div>
-    <p style="text-align:center;color:var(--bone-dim);margin-top:2.8rem;font-size:1.05rem">When you're ready for the whole trip, I've got a room for you. But it starts right here — twenty minutes and one song.</p>
   </div></section>
 
-  <!-- A NOTE FROM KEVIN -->
-  <section class="band alt"><div class="wrap note">
-    <div class="kicker" style="display:inline-flex">A note from me</div>
-    <p class="nb">Look — I'm not here to sell you anything. I'm the friend who's already made this trip and came back more alive than he left.</p>
-    <p class="nb">So come with me. Five days, twenty minutes each. Bring your voice — that's the only thing you need to pack.</p>
-    <p class="nb">If nothing moves, no harm done — we shake hands and you go. But if something cracks open in there, you'll feel it. And somewhere down the road you'll catch yourself thinking, <em>thanks, brother.</em></p>
-    <div class="sign">— Kevin</div>
+  <!-- WHY IT WORKS / KEVIN / PRICE -->
+  <section class="band"><div class="wrap why">
+    <div class="kicker" style="display:inline-flex">Why it works</div>
+    <h2>Kevin Six7 doesn't teach this. He moves you through it.</h2>
+    <p>A musician who plays from the heart. A trainer with decades in his own transformation. And an ear for the exact loop that's been keeping you stuck. He builds trust in minutes and creates real movement — soul-level, in the room, faster than you'll believe.</p>
+    <p>This isn't information you'll file away. It's a different life to walk through, starting in thirty days.</p>
+    <div class="price">That's why The Sound of Kings is <b>$5,000</b> — a fraction of what a life you can feel is worth. The shift is worth <b>$15,000</b>. In thirty days, you'll know why.</div>
+  </div></section>
+
+  <!-- WHAT SHIFTS -->
+  <section class="band alt"><div class="wrap">
+    <div class="center-head">
+      <div class="kicker" style="display:inline-flex">What actually changes</div>
+      <h2>The same life. A different man in it.</h2>
+    </div>
+    <div class="shifts">
+      <div class="shift"><div class="h">How you move</div><p>Grounded, present, unhurried. You lead a room without raising your voice.</p></div>
+      <div class="shift"><div class="h">How you feel</div><p>The music comes back into the house. Your kids hear it. So does your wife.</p></div>
+      <div class="shift"><div class="h">How you think</div><p>The loop that drained you for years goes quiet. The energy returns to you.</p></div>
+      <div class="shift"><div class="h">How you lead</div><p>Family and company led from a full center — not from the armor you've been wearing.</p></div>
+    </div>
+  </div></section>
+
+  <!-- THE VISION / MOVEMENT -->
+  <section class="band"><div class="wrap vision">
+    <div class="kicker" style="display:inline-flex">Bigger than a program</div>
+    <h2>A movement, beginning with you.</h2>
+    <p>The Sound of Kings begins online. It doesn't stay there. Retreats. Rooms of hundreds. Stages across the globe. The men who step in now aren't taking a course — they're the first Kings of a movement that's only rising.</p>
+    <div class="stages">
+      <span class="stage now">Online now</span><span class="sep">→</span>
+      <span class="stage">Retreats</span><span class="sep">→</span>
+      <span class="stage">Live venues</span><span class="sep">→</span>
+      <span class="stage">Across the globe</span>
+    </div>
   </div></section>
 
   <!-- FINAL CTA -->
   <section class="final"><div class="wrap">
     <div class="crown">♛</div>
-    <h2>Get your heart back.<br>Start tonight.</h2>
-    <p class="sub">Come on — twenty minutes a day, five days, just your voice. I'll meet you there.</p>
+    <h2>Your thirty days start with one shift.</h2>
+    <p class="sub">Feel the first shift for yourself — free. When you're ready for the thirty days, I'll be here.</p>
+    <div class="signoff">— Kevin Six7</div>
     <div class="optin" style="margin-top:2.6rem">
-      <form onsubmit="event.preventDefault();document.getElementById('thanks2').style.display='block';this.style.display='none';">
+      <form onsubmit="event.preventDefault();this.nextElementSibling.style.display='block';this.style.display='none';">
         <input type="email" name="email" placeholder="Your best email" required>
-        <button type="submit" class="btn">Send me the protocol →</button>
+        <button type="submit" class="btn">Send me the First Shift →</button>
       </form>
-      <div id="thanks2" style="display:none;color:var(--gold-bright);font-family:var(--serif);font-style:italic;margin-top:1rem;font-size:1.1rem">
-        Check your inbox — your first rep is waiting. ♛
-      </div>
-      <div class="fine"><b>Free.</b> The 5-Day Voice Protocol, delivered to your inbox.</div>
+      <div class="thanks">It's on its way. Your first shift is waiting. ♛</div>
+      <div class="fine"><b>Free.</b> The First Shift, delivered to your inbox.</div>
     </div>
   </div></section>
 
-  <!-- FOOTER -->
   <footer><div class="wrap">
     <div class="brand" style="font-size:1rem"><span class="crown">♛</span> The Sound of Kings</div>
-    <div class="links">
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#get">Get the protocol</a>
-    </div>
+    <div class="links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#begin">Begin</a></div>
   </div>
   <div class="wrap" style="margin-top:1.2rem;color:var(--bone-faint);font-size:.75rem;letter-spacing:.04em">
-    © <span id="yr"></span> Kevin Six7 · The Sound of Kings. A music-as-medicine practice.
+    © <span id="yr"></span> Kevin Six7 · The Sound of Kings. A movement in soul, heart, and mind.
   </div></footer>
 
   <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
