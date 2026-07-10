@@ -117,6 +117,15 @@
   .room p{color:var(--bone-dim);margin-top:1.4rem;font-size:1.05rem}
   .room p b{color:var(--gold-bright);font-weight:400;font-family:var(--serif)}
 
+  /* two backend offers */
+  .offers{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:.5rem}
+  .offer{border:1px solid rgba(201,162,75,.28);border-radius:4px;padding:2.2rem 2rem;background:rgba(255,255,255,.015);transition:.2s}
+  .offer:hover{border-color:rgba(201,162,75,.55);transform:translateY(-2px)}
+  .offer .oh{font-family:var(--serif);font-size:1.7rem;color:var(--bone);margin-bottom:.35rem}
+  .offer .ot{color:var(--gold-bright);font-family:var(--serif);font-style:italic;font-size:1.08rem;margin-bottom:1.1rem}
+  .offer p{color:var(--bone-dim);font-size:1.01rem;line-height:1.6}
+  @media(max-width:640px){.offers{grid-template-columns:1fr}}
+
   /* final CTA */
   .final{padding:7rem 0;text-align:center;
     background:radial-gradient(80% 60% at 50% 50%, #14204f 0%, rgba(20,32,79,0) 65%), var(--navy)}
@@ -202,18 +211,33 @@
     <div>
       <div class="kicker">Who's guiding this</div>
       <h2>Kevin Six7</h2>
-      <div class="three">Part life coach. Part therapist. Part music coach. One man.</div>
-      <p>A lifelong entrepreneur — so he understands the weight you carry in business. A husband and father, now divorced — so he knows first-hand the full spectrum of emotional gut-punches life throws at a man. Decades deep in his own self-improvement, with an uncanny, almost psychic read on people that cuts to the real thing fast, often in the first session.</p>
+      <div class="three">Part growth trainer. Part voice coach. Part musician. One man.</div>
+      <p>A lifelong entrepreneur — so he understands the weight you carry in business. A husband and father, now divorced — so he knows first-hand the full spectrum of emotional gut-punches life throws at a man. Decades deep in his own growth work, with finely tuned intuitive senses that cut to the real thing fast, often in the first session.</p>
       <p>He builds trust in minutes, opens the door to immediate emotional release, and plays music live that pulls the feeling up out of you. A natural communicator — at home one-on-one, in a room of men, or on a stage. Not theory. Presence.</p>
       <div class="cred">You are the instrument. He'll help you play it again.</div>
     </div>
   </div></section>
 
-  <!-- ROOM HINT -->
-  <section class="band"><div class="wrap room">
-    <div class="kicker" style="display:inline-flex">After the five days</div>
-    <div class="q">Five days is a crack in the ice.<br><em>Forty-five is the reboot.</em></div>
-    <p>The free protocol is the taster. The full work is <b>The 45-Day Emotional Reboot</b> — coaching, therapy-depth, and music in one container, with a small room of men who watch each other come back online. What you'll feel in five days is 1% of it. When you're ready, that room exists. It starts here — with twenty minutes and one song.</p>
+  <!-- THE WORK BEHIND IT -->
+  <section class="band"><div class="wrap">
+    <div class="center-head">
+      <div class="kicker" style="display:inline-flex">When the five days aren't enough</div>
+      <h2>Five days is a crack in the ice. This is the thaw.</h2>
+      <p>Two rooms for the Kings who want the whole thing — not a peak weekend, but training.</p>
+    </div>
+    <div class="offers">
+      <div class="offer">
+        <div class="oh">The Sound of Kings</div>
+        <div class="ot">Voice training — plus instruments.</div>
+        <p>Your voice, trained and freed. Already play? This strengthens it. Don't play a note? Also fine — we'll teach you. We gather the Kings who need only refinement on the parts of life that still need training.</p>
+      </div>
+      <div class="offer">
+        <div class="oh">The 45-Day Reboot</div>
+        <div class="ot">The Feminine Pole, downloaded.</div>
+        <p>Most driven men have cut one pole off at the root — the feminine: feeling, presence, receptivity. Not to make you soft. To make you whole. A King is grounded in both poles, and the best leaders lead from both.</p>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--bone-dim);margin-top:2.8rem;font-size:1.05rem">When you're ready, these rooms exist. It starts here — with twenty minutes and one song.</p>
   </div></section>
 
   <!-- FINAL CTA -->
