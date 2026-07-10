@@ -126,6 +126,12 @@
   .offer p{color:var(--bone-dim);font-size:1.01rem;line-height:1.6}
   @media(max-width:640px){.offers{grid-template-columns:1fr}}
 
+  /* personal note — friend talking */
+  .note{max-width:680px;margin:0 auto;text-align:center}
+  .note .nb{font-family:var(--serif);font-size:clamp(1.2rem,2.2vw,1.6rem);line-height:1.5;color:var(--bone);margin-bottom:1.3rem}
+  .note .nb em{color:var(--gold-bright);font-style:italic}
+  .note .sign{font-family:var(--serif);font-style:italic;color:var(--gold-bright);font-size:1.25rem;margin-top:1.6rem}
+
   /* final CTA */
   .final{padding:7rem 0;text-align:center;
     background:radial-gradient(80% 60% at 50% 50%, #14204f 0%, rgba(20,32,79,0) 65%), var(--navy)}
@@ -159,7 +165,7 @@
   <header class="hero"><div class="wrap">
     <div class="crown-lg">♛</div>
     <h1>You built the life.<br>Now <em>feel</em> it.</h1>
-    <p class="sub">A 5-day protocol for successful men who feel nothing. You are the instrument — it starts with your voice. Twenty minutes a day, with or without a guitar in your hands.</p>
+    <p class="sub">Come with me for five days. You are the instrument — it starts with your voice. Twenty minutes a day, with or without a guitar in your hands. For the men who built the life and stopped feeling it.</p>
     <div class="rule"></div>
     <div class="optin" id="get">
       <div class="lbl">Free · The 5-Day Voice Protocol</div>
@@ -233,18 +239,27 @@
       </div>
       <div class="offer">
         <div class="oh">The 45-Day Reboot</div>
-        <div class="ot">The Feminine Pole, downloaded.</div>
-        <p>Most driven men have cut one pole off at the root — the feminine: feeling, presence, receptivity. Not to make you soft. To make you whole. A King is grounded in both poles, and the best leaders lead from both.</p>
+        <div class="ot">A 45-day training. The Feminine Pole, downloaded.</div>
+        <p>Forty-five days of training to reclaim the pole most driven men cut off at the root — the feminine: feeling, presence, receptivity. Not to make you soft. To make you whole. A King is grounded in both poles, and the best leaders lead from both.</p>
       </div>
     </div>
-    <p style="text-align:center;color:var(--bone-dim);margin-top:2.8rem;font-size:1.05rem">When you're ready, these rooms exist. It starts here — with twenty minutes and one song.</p>
+    <p style="text-align:center;color:var(--bone-dim);margin-top:2.8rem;font-size:1.05rem">When you're ready for the whole trip, I've got a room for you. But it starts right here — twenty minutes and one song.</p>
+  </div></section>
+
+  <!-- A NOTE FROM KEVIN -->
+  <section class="band alt"><div class="wrap note">
+    <div class="kicker" style="display:inline-flex">A note from me</div>
+    <p class="nb">Look — I'm not here to sell you anything. I'm the friend who's already made this trip and came back more alive than he left.</p>
+    <p class="nb">So come with me. Five days, twenty minutes each. Bring your voice — that's the only thing you need to pack.</p>
+    <p class="nb">If nothing moves, no harm done — we shake hands and you go. But if something cracks open in there, you'll feel it. And somewhere down the road you'll catch yourself thinking, <em>thanks, brother.</em></p>
+    <div class="sign">— Kevin</div>
   </div></section>
 
   <!-- FINAL CTA -->
   <section class="final"><div class="wrap">
     <div class="crown">♛</div>
     <h2>Get your heart back.<br>Start tonight.</h2>
-    <p class="sub">Twenty minutes a day. Five days. Your voice — and an instrument if you want one.</p>
+    <p class="sub">Come on — twenty minutes a day, five days, just your voice. I'll meet you there.</p>
     <div class="optin" style="margin-top:2.6rem">
       <form onsubmit="event.preventDefault();document.getElementById('thanks2').style.display='block';this.style.display='none';">
         <input type="email" name="email" placeholder="Your best email" required>
